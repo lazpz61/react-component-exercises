@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ChallengeOne from './challenge-one';
-// import ChallengeTwo from './challenge-two';
+import ChallengeTwo from './challenge-two';
 
 export default class App extends Component {
   constructor(){
@@ -13,7 +13,7 @@ export default class App extends Component {
       <div className='app'>
         <ChallengeOne />
         <hr />
-        {/* <ChallengeTwo /> */}
+        <ChallengeTwo />
 
       </div>
     );
