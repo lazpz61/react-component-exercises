@@ -6,21 +6,28 @@ export default class ChallengeTwo extends Component {
         super();
 
         this.state = {
-            show: true
+            visibility: 'visible'
             
         }
 }
-
+handleClick = () => {
+    this.setState({visibility: 'hidden'})
+    if (this.state.visibility === "hidden"){
+        {this.handleClick = () => {
+            this.setState({visibility: 'hidden'})
+        }}
+    }
+}
 
 
 render(){
+    console.log("test");  
     return (
-        <div className="LMP2">
-             {/* <h1 style={this.state}>I am Showing!</h1> */}
-             this.state.show ? <h1>Hide and Show</h1>
-             <button onClick={()=>{this.setState({show:!this.state.show})}}>{ this.state.show? 'Hide' : 'Show'} Div</button>        
         
-        </div>    
+            <div className="LMP2">
+             <h1 style={this.state}>I am Showing!</h1>
+             <button onClick={this.handleClick}>Hide!</button>        
+            </div>    
             
              );
  }
