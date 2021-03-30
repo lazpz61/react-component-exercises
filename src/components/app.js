@@ -14,7 +14,7 @@ export default class App extends Component {
         <ChallengeOne />
         <hr />
         <ChallengeTwo />
-
+        <hr />
       </div>
     );
   }

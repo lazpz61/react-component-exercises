@@ -11,17 +11,14 @@ export default class ChallengeTwo extends Component {
         }
 }
 handleClick = () => {
-    this.setState({visibility: 'hidden'})
-    if (this.state.visibility === "hidden"){
-        {this.handleClick = () => {
+    if (this.state.visibility === "visible") {
             this.setState({visibility: 'hidden'})
-        }}
-    }
-}
-
+            } else {
+                this.setState({visibility: "visible"})
+            }
+        }
 
 render(){
-    console.log("test");  
     return (
         
             <div className="LMP2">
