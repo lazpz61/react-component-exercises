@@ -22,10 +22,9 @@ render(){
     return (
         
             <div className="LMP2">
-             <h1 style={this.state}>I am Showing!</h1>
-             <button onClick={this.handleClick}>Hide!</button>        
+             <h1 style={this.state}>Hide Me!</h1>
+             <button onClick={this.handleClick}>Hide</button>        
             </div>    
-            
              );
  }
 }
