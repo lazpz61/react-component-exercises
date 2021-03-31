@@ -3,6 +3,7 @@ import ChallengeOne from './challenge-one';
 import ChallengeTwo from './challenge-two';
 import ChallengeThree from './challenge-three';
 import ChallengeFour from './challenge-four';
+import CustomTextInput from './refs';
 
 export default class App extends Component {
   constructor(){
@@ -21,6 +22,7 @@ export default class App extends Component {
         <hr />
         <ChallengeFour />
         <hr />
+        <CustomTextInput />
       </div>
     );
   }
